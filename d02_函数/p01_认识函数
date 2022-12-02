@@ -1,7 +1,0 @@
-def my_len(data):
-    count=0
-    for i in data:
-        count+=1
-    print(f"输入的长度为{count}")
-
-my_len("我是你爸爸")
