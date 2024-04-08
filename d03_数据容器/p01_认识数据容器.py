@@ -5,15 +5,21 @@
 # 列表内元素可以不是统一类型
 # 定义列表
 list0 = [99, 2, 2, "3", True]
+
+list00 = [99, 2, list0, "3", True]
 # 定义空列表
 list1 = []
-list2=list()
+list2 = list()
 
 print(list)
+print(list0)
+print(list00)
 print(list1)
 print(list2)
-# 取出列表元素
-print(list[3])
+
+
+print("直接取出列表元素")
+print(list00[2])
 
 # class的成员函数成为方法,需要使用class.方法调用
 # index()获取元素在list中的下标(这里True会转成1)
