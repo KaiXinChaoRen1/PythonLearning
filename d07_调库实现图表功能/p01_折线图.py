@@ -19,4 +19,5 @@ line.set_global_opts(
 )
 
 #生成图像
+print("生成图像")
 line.render()
