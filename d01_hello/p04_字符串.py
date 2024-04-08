@@ -3,6 +3,7 @@ name="你爸爸"
 print("我是"+name)  
 #字符串占位符,可以%s表示转换成字符串,%d:整数 %f:浮点数
 your_name="我儿子"
+print(type(your_name))
 num=999
 print("你是%s,我是%s,我有%s个儿子"%(your_name,name,num))
 #精度问题
