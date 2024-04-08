@@ -6,7 +6,7 @@ class Kaiyin:
         print("凯隐大招")
 
     def __init__(self):
-        print("一个普通凯隐")
+        print("创建了一个普通凯隐")
 
 class Nanju:
     def zhufu(self):
@@ -24,11 +24,11 @@ class KaiyinBlue(Kaiyin,Nanju):
     def dazhao(self):
         #重写写父类方法,又想用父类方法 super()
         super().dazhao()            
-        print("蓝凯隐大招")
+        print("现已升级为蓝凯隐大招")
 
     def __init__(self):
         
-        print("一个蓝色凯隐")
+        print("创建了一个蓝色凯隐")
         
 hero=KaiyinBlue()
 hero.method1()
