@@ -19,8 +19,11 @@ class Nanju:
 
 class KaiyinBlue(Kaiyin,Nanju):
   
-    
+    def method1(self):
+        pass  #占位 ,防止报错
     def dazhao(self):
+        #重写写父类方法,又想用父类方法 super()
+        super().dazhao()            
         print("蓝凯隐大招")
 
     def __init__(self):
@@ -28,6 +31,7 @@ class KaiyinBlue(Kaiyin,Nanju):
         print("一个蓝色凯隐")
         
 hero=KaiyinBlue()
+hero.method1()
 hero.dazhao() 
 hero.zhufu()
 print(hero.xueliang)
