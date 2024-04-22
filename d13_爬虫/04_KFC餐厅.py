@@ -32,16 +32,17 @@ if __name__ == "__main__":
             num= len(json_data['Table1'])
             
             for i in range(0, num):
-                    print(json_data['Table1'][i]['storeName']+'---'+json_data['Table1'][i]['addressDetail'])
+                    my_s =json_data['Table1'][i]['storeName']+'---'+json_data['Table1'][i]['addressDetail']
+                    data_list.append(my_s)
+                    print(my_s)
             pageIndex = str(int(pageIndex) + 1)
             data['pageIndex'] = pageIndex
         print('-----循环结束-----')
-        # 值得注意的是:追加而不覆盖用a,而不是w
-        # fp = open('./Data/BeijingKFC.json', 'a', encoding='utf-8')
-        # with open('./Data/BeijingKFC.txt', 'w', encoding='utf-8') as fp:
-        #     fp.write(str(data_list))
+
+        with open('./BeijingKFC.txt', 'a', encoding='utf-8') as fp:
+            fp.write(str(data_list))
     except IOError:
         print('写入异常!')
     else:
-        print('爬取结束!')
-        #fp.close()
+        print('写入结束!')
+        fp.close()
