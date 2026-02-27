@@ -7,3 +7,5 @@
 666
 1.0
 "我是你爸爸"
+
+import p01_HelloWorld   
