@@ -1,0 +1,1 @@
+使用C:\Users\wenqiang.li1\Desktop\githuuuub\PythonLearning\mylearningvenv\Scripts\python虚拟环境命令执行本项目命令
