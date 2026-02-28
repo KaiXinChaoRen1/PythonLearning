@@ -2,6 +2,8 @@ from pathlib import Path
 
 
 print("我是你爸爸")#这是注释？
+
+print("""'我'是你"爸爸" """)
 # codespace 666!!!
 print("111打印__name__是:"+__name__)
 
